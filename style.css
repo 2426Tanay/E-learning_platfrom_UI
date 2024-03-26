@@ -390,7 +390,7 @@ footer .copyright .pro-links i:hover{
 }
 #about-home{
   color: white;
-  font-size: 2.2rem;
+  font-size: 1.12rem;
   letter-spacing: 1px;
 }
 #about-container{
@@ -436,31 +436,29 @@ footer .copyright .pro-links i:hover{
   font-size: 16px;
   color: #293038;
 }
+
+
 #trust{
   text-align: center;
   padding: 8vw;
 }
 #trust .trust-img{
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 10px;
-}
-#trust .trust-img .img1{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;  
-}
-#trust .trust-img .img2{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;  
-}
-#trust .trust-img img{
-  width: 90px;
-  height: auto;
+  align-items: center;
+  justify-content: center;
 }
 
+#trust .trust-img img{
+  width: 150px;
+  height: 140px;
+  padding-top: 40px;
+}
+#trust .trust-img .img1 img{
+  padding-left: 50px;
+}
+#trust .trust-img .img2 img{
+  padding-left: 50px;
+}
 /* Blog */
 
 
@@ -542,19 +540,22 @@ footer .copyright .pro-links i:hover{
     padding: 8vw 4vw 2vw 4vw;
   }
   #about-container .about-img{
-    width: 40%;
+    width: 60%;
     padding-right: 40px;
   }
-  #trust .trust-img img{
-    width: 50px;
-    height: auto;
-  }
-  #trust .trust-img {
-    margin-top: 60px;
+  #trust .trust-img{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-}
+    justify-content: center;
+  }
+  
+  #trust .trust-img img{
+    width: 150px;
+    height: 140px;
+    padding-top: 40px;
+  }
+  
 }
 
 @media (max-width: 776px){
@@ -595,7 +596,34 @@ footer .copyright .pro-links i:hover{
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
-
   }
 
+   /* About */
+   #about-container{
+    flex-direction: column-reverse;
+  }
+  #about-container .about-img{
+    width: 100%;
+    padding-right: 0px;
+  }
+  #about-container .about-text{
+    width: 100%;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  
+
+  #trust .trust-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #trust .trust-img img{
+    width: 100px;
+    height: 100px;
+    padding-top: 40px;
+    margin-right: 30px;
+  }
+  
 }
