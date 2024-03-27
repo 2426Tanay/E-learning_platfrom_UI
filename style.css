@@ -183,6 +183,7 @@ nav .navigation ul li a:hover{
   text-align: start;
   background: #f9f9ff;
   height: 100%;
+  position: relative;
 }
 #course .courses img{
   width: 100%;
@@ -192,6 +193,19 @@ nav .navigation ul li a:hover{
 }
 #course .courses .details{
   padding: 15px 15px 0 15px;
+}
+#course .courses .cost{
+  background-color: rgb(74, 74, 136);
+  color: white;
+  line-height: 70px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  bottom: 130px;
+  font-weight: 600;
 }
 .courses .btn-c a{
    margin: 25px 0;
